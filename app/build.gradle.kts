@@ -33,6 +33,10 @@ android {
 
 dependencies {
     implementation(libs.room.runtime)
+    implementation(libs.androidx.room.compiler)
+    implementation(libs.lifecycle.livedata)
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.androidx.lifecycle.extensions)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
