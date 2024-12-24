@@ -3,6 +3,7 @@ package com.example.bitp3453_group_project.data.model;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import androidx.room.TypeConverters;
 
 import java.util.Date;
 
@@ -28,9 +29,11 @@ public class Lab {
     @ColumnInfo(name = "capacity")
     private int capacity;
 
+    @TypeConverters(DateConverter.class)
     @ColumnInfo(name = "created_at")
     private Date createdAt;
 
+    @TypeConverters(DateConverter.class)
     @ColumnInfo(name="updated_at")
     private Date updatedAt;
 

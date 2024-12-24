@@ -35,9 +35,11 @@ public class Item {
     @ColumnInfo(name = "condition")
     private ItemCondition condition;
 
+    @TypeConverters(DateConverter.class)
     @ColumnInfo(name = "created_at")
     private Date createdAt;
 
+    @TypeConverters(DateConverter.class)
     @ColumnInfo(name="updated_at")
     private Date updatedAt;
 
